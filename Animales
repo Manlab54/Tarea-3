@@ -63,10 +63,10 @@ public class animales {
          animales a1 = new animales(4, "Domesticos", 1);
         System.out.println(a1);
         
-        Perro p1 = new Perro ("Chihuahua","No","3 kilos", 6);
+        Perro p1 = new Perro ("Chihuahua","Si","3 kilos", 6);
         System.out.println(p1);
         
-        Gato g1 = new Gato ("Persa","No","8 kilos",8);
+        Gato g1 = new Gato ("Persa","Si","8 kilos",8);
         System.out.println(g1);
         
         
