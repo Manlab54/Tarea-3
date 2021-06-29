@@ -1,0 +1,78 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package herencias;
+
+/**
+ *
+ * @author Joshua
+ */
+public class Gato extends animales {
+    
+private String Raza;    
+private String Come;
+private String Peso;
+private int edad;
+
+    public Gato() {
+    }
+
+    public Gato(String Raza, String Come, String Peso, int edad) {
+        this.Raza = Raza;
+        this.Come = Come;
+        this.Peso = Peso;
+        this.edad = edad;
+    }
+
+    public Gato(String Raza, String Come, String Peso, int edad, int NumPatas, String Especie, int NumOjos) {
+        super(NumPatas, Especie, NumOjos);
+        this.Raza = Raza;
+        this.Come = Come;
+        this.Peso = Peso;
+        this.edad = edad;
+    }
+
+    public String getRaza() {
+        return Raza;
+    }
+
+    public void setRaza(String Raza) {
+        this.Raza = Raza;
+    }
+
+    public String getCome() {
+        return Come;
+    }
+
+    public void setCome(String Habla) {
+        this.Come = Come;
+    }
+
+    public String getPeso() {
+        return Peso;
+    }
+
+    public void setPeso(String Pesa) {
+        this.Peso = Peso;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Gato{" + "Raza=" + Raza + ", Come=" + Come + ", Peso=" + Peso + ", edad=" + edad + '}';
+    }
+
+    
+    
+    
+    
+}
