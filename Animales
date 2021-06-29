@@ -1,0 +1,75 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package herencias;
+
+/**
+ *
+ * @author 
+ */
+public class animales {
+   
+    private int NumPatas;
+    private String Especie;
+    private int NumOjos;
+
+    public animales() {
+    }
+
+    public animales(int NumPatas, String Especie, int NumOjos) {
+        this.NumPatas = NumPatas;
+        this.Especie = Especie;
+        this.NumOjos = NumOjos;
+    }
+
+    public int getNumPatas() {
+        return NumPatas;
+    }
+
+    public void setNumPatas(int NumPatas) {
+        this.NumPatas = NumPatas;
+    }
+
+    public String getEspecie() {
+        return Especie;
+    }
+
+    public void setEspecie(String Especie) {
+        this.Especie = Especie;
+    }
+
+    public int getNumOjos() {
+        return NumOjos;
+    }
+
+    public void setNumOjos(int NumOjos) {
+        this.NumOjos = NumOjos;
+    }
+
+    @Override
+    public String toString() {
+        return "animales{" + "NumPatas=" + NumPatas + ", Especie=" + Especie + ", NumOjos=" + NumOjos + '}';
+    }
+
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+         animales a1 = new animales(4, "Domesticos", 1);
+        System.out.println(a1);
+        
+        Perro p1 = new Perro ("Chihuahua","No","3 kilos", 6);
+        System.out.println(p1);
+        
+        Gato g1 = new Gato ("Persa","No","8 kilos",8);
+        System.out.println(g1);
+        
+        
+    }
+    
+}
